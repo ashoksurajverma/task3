@@ -5,7 +5,8 @@
   "main": "unit.test.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack serve --config webpack.config.js"
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

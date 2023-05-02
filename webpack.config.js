@@ -1,3 +1,4 @@
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -7,6 +8,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   mode: "development",
+  entry: "./src/index.tsx",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+  },
   module: {
     rules: [
       {
